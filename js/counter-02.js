@@ -28,8 +28,3 @@ window.addEventListener('click', function (event) {
         }
     }
 });
-
-// 47:00 ...
-
-
-
