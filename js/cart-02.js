@@ -67,7 +67,9 @@ window.addEventListener('click', function (event) {
 
             // отобразим товар в карзине 
             cartWrapper.insertAdjacentHTML('beforeend', cardItemHtml);
-        }
+        };
 
+        // Сбрасываем счетчик на "1"
+        card.querySelector('[data-counter]').innerText = '1';
     };
 });
