@@ -29,6 +29,9 @@ window.addEventListener('click', function (event) {
             // Проверка на товар который находится в корзине
             // удаляем товар который находится в корзине 
             event.target.closest('.cart-item').remove();
+
+            // Отображение статуса корзины - Пустая / Полная
+            toggleCartStatus();
         }
 
     }
