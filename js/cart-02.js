@@ -23,7 +23,7 @@ window.addEventListener('click', function (event) {
 
         // проверяем есть ли в карзине такой товар 
         const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
-        console.log(itemInCart);
+        // console.log(itemInCart);
 
         // Если товар есть в карзине 
         if (itemInCart) {
@@ -67,9 +67,13 @@ window.addEventListener('click', function (event) {
 
             // отобразим товар в карзине 
             cartWrapper.insertAdjacentHTML('beforeend', cardItemHtml);
+
         };
 
         // Сбрасываем счетчик на "1"
         card.querySelector('[data-counter]').innerText = '1';
+
+        // Отображение статуса корзины - Пустая / Полная
+        toggleCartStatus();
     };
 });
